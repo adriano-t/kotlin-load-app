@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/text_name_label"
+            />
+        <Constraint
+            android:id="@+id/text_status_value" android:rotationX="123"/>
+        <Constraint
+            android:id="@+id/text_status_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/text_name_label"
+            app:layout_constraintStart_toStartOf="@+id/text_name_label"
+            android:layout_marginTop="8dp"
+            android:rotationY="-360"
+        />
+        <Constraint
+            android:id="@+id/text_filename_value"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/text_name_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBaseline_toBaselineOf="@+id/text_name_label"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:rotation="-360"
+        />
+        <Constraint
+            android:id="@+id/button_ok"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:scaleX="1.1"
+            android:scaleY="1.1"
+            android:translationY="30dp"
+            android:alpha="0"
+        />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint android:id="@id/text_name_label" />
+        <Constraint android:id="@+id/text_status_value" />
+    </ConstraintSet>
+    <Transition
+        app:duration="1000"
+        app:constraintSetStart="@+id/start"
+        app:constraintSetEnd="@+id/end"
+        app:autoTransition="animateToEnd" />
+</MotionScene>
