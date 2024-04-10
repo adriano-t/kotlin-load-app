@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ND940C3-Project</string>
+    <string name="app_name">Loading Status</string>
     <string name="app_description">Download files from Internet</string>
     <string name="action_settings">Settings</string>
 
@@ -8,7 +8,12 @@
     <string name="notification_description">The Project 3 repository is downloaded</string>
     <string name="notification_button">See changes</string>
 
-    <string name="button_name">Click me</string>
-    <string name="button_loading">We are loading </string>
+    <string name="button_download_text">Download</string>
+    <string name="button_complete_text">Done</string>
+    <string name="button_loading_text">We are loading </string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="rb_glide_text">Download Glide</string>
+    <string name="rb_app_text">Download App</string>
+    <string name="rb_retrofit_text">Download Retrofit</string>
+    <string name="choose_rb_element">Select an element to download</string>
 </resources>
