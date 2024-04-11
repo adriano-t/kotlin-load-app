@@ -71,6 +71,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        unregisterReceiver(receiver)
+    }
+
     private fun initNotifications() {
         notificationManager = ContextCompat.getSystemService(
             this,

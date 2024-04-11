@@ -65,6 +65,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="1" />
+        app:layout_constraintVertical_bias="1"
+        app:backgroundColor="@color/colorPrimary"
+        app:progressBarColor="@color/colorAccent"
+        app:textColor="@color/white"
+        app:progressCircleColor="@color/white"
+    />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
